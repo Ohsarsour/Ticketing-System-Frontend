@@ -4,7 +4,6 @@ import BoardList from './components/BoardList'
 import AddBoard from './components/AddBoard'
 
 function App() {
-  // State to trigger refresh of the board list
   const [refresh, setRefresh] = useState(false)
 
   // Function to toggle the refresh state

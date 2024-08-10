@@ -25,8 +25,11 @@ export const createBoard = async (board: { name: string }) => {
 }
 
 // Function to update an existing board
-export const updateBoard = async (id: number, board: { name: string }) => {
-  return await axiosInstance.put(`${API_URL}/${id}`, board)
+export const updateBoard = async (
+  id: number,
+  board: { id: number; name: string }
+) => {
+  return await axiosInstance.put(`/${id}`, board)
 }
 
 // Function to delete a board
